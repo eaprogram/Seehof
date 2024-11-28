@@ -9,12 +9,16 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: #C72C41;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px #C72C41;
     padding: 20px;
     text-align: center;
     width: 300px;
+}
+
+#trackTitle{
+    color: #D4AF37;
 }
 
 .cover {
@@ -44,8 +48,8 @@ audio {
 }
 
 button {
-    background-color: #007bff;
-    color: white;
+    background-color: #2E5B3C;
+    color: #C0C0C0;
     border: none;
     border-radius: 5px;
     padding: 10px 15px;
@@ -54,5 +58,5 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #C0C0C0;
 }
