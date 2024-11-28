@@ -13,7 +13,6 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 
-const analytics = getAnalytics(app);  
 const audioPlayer = document.getElementById('audioPlayer');
 const playButton = document.getElementById('playButton');
 const pauseButton = document.getElementById('pauseButton');
@@ -30,6 +29,8 @@ function loadTracks() {
             tracks.push(doc.data());
         });
         updatePlayer();
+    }).catch((error) => {
+        console.error("Fehler beim Laden der Tracks: ", error);
     });
 }
 
@@ -37,9 +38,9 @@ function loadTracks() {
 function updatePlayer() {
     if (tracks.length > 0) {
         const currentTrack = tracks[currentTrackIndex];
-        audioPlayer.src = currentTrack.audioUrl;
-        trackTitle.textContent = currentTrack.title;
-        coverImage.src = currentTrack.coverUrl;
+        audioPlayer.src = currentTrack.audioUrl; // Setze die Audio-URL
+        trackTitle.textContent = currentTrack.title; // Setze den Titel
+        coverImage.src = currentTrack.coverUrl; // Setze die Cover-URL
     }
 }
 
