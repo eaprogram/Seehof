@@ -30,6 +30,8 @@ function loadTracks() {
             tracks.push(doc.data());
         });
         updatePlayer();
+    }).catch((error) => {
+        console.error("Fehler beim Laden der Tracks: ", error);
     });
 }
 
