@@ -17,9 +17,6 @@ body {
     width: 300px;
 }
 
-#trackTitle{
-    color: #D4AF37;
-}
 
 .cover {
     margin-bottom: 20px;
@@ -48,8 +45,8 @@ audio {
 }
 
 button {
-    background-color: #2E5B3C;
-    color: #C0C0C0;
+    background-color: #007bff;
+    color: white;
     border: none;
     border-radius: 5px;
     padding: 10px 15px;
@@ -58,5 +55,5 @@ button {
 }
 
 button:hover {
-    background-color: #C0C0C0;
+    background-color: #0056b3;
 }
